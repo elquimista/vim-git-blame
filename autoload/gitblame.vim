@@ -33,7 +33,7 @@ function! s:system(str, ...)
 endfunction
 
 function! gitblame#commit_summary(file, line)
-  return s:system('git --no-pager blame '.a:file.' -L '.a:line.',+1 --porcelain | awk "NR==1 {print $1}" | xargs git --no-pager log -1 --pretty=format:"%h - (%cd) %s - %an" --date=relative')
+  return s:system("git --no-pager blame ".a:file." -L ".a:line.",+1 --porcelain | awk 'NR==1 {print $1}' | xargs git --no-pager log -1 --pretty=format:'%h - (%cd) %s - %an' --date=relative")
 endfunction
 
 function! gitblame#echo()
