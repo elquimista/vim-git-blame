@@ -1,23 +1,19 @@
-git-blame.vim
+vim-git-blame
 ==========
 ```
- ███╗  ███╗ █████╗      ████╗ █╗     ███╗ █╗  █╗█████╗      █╗  █╗ ███╗ █╗  █╗
-█╬══█╗ ╚█╔╝ ╚═█╔═╝      █╔══█╗█║    █╬══█╗██╗██║█╔═══╝      █║  █║ ╚█╔╝ ██╗██║
-█║  ╚╝  █║    █║        █║  █║█║    █║  █║█╔█╬█║█║          █║  █║  █║  █╔█╬█║
-█║      █║    █║  █████╗████╬╝█║    █║  █║█║╚╝█║████╗       █║  █║  █║  █║╚╝█║
-█║ ██╗  █║    █║  ╚════╝█╔══█╗█║    █████║█║  █║█╔══╝  ██╗  █║  █║  █║  █║  █║
-█║ ╚█║  █║    █║        █║  █║█║    █╔══█║█║  █║█║     ██║  ╚█╗█╬╝  █║  █║  █║
-╚███╬╝ ███╗   █║        ████╬╝█████╗█║  █║█║  █║█████╗ ╚═╝   ╚█╬╝  ███╗ █║  █║
- ╚══╝  ╚══╝   ╚╝        ╚═══╝ ╚════╝╚╝  ╚╝╚╝  ╚╝╚════╝        ╚╝   ╚══╝ ╚╝  ╚╝
+
+ _    ________  ___      ________________    ____  __    ___    __  _________
+| |  / /  _/  |/  /     / ____/  _/_  __/   / __ )/ /   /   |  /  |/  / ____/
+| | / // // /|_/ /_____/ / __ / /  / /_____/ __  / /   / /| | / /|_/ / __/   
+| |/ // // /  / /_____/ /_/ // /  / /_____/ /_/ / /___/ ___ |/ /  / / /___   
+|___/___/_/  /_/      \____/___/ /_/     /_____/_____/_/  |_/_/  /_/_____/   
+                                                                             
+
 ```
 
 See Git Blame information in the status bar for the currently selected line.
 
-![](https://wx3.sinaimg.cn/large/bceaad1fly1frwfmv58g4j21kw0ingph.jpg)
-
-![](https://wx3.sinaimg.cn/large/bceaad1fly1frwfmv539mj21kw0inq7e.jpg)
-
-![](https://wx2.sinaimg.cn/large/bceaad1fly1frwfmv50ytj21kw0in42a.jpg)
+![screenshot](screenshot.png)
 
 Installation
 --------------
@@ -30,51 +26,44 @@ then simply copy and paste:
 
 ```bash
     cd ~/.vim/bundle
-    git clone git@github.com:zivyangll/git-blame.vim.git
+    git clone https://github.com/elquimista/vim-git-blame.git
 ```
 
 Using [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
-Plug 'zivyangll/git-blame.vim'
+Plug 'elquimista/vim-git-blame'
 ```
 
 Using [Vundle](https://github.com/VundleVim/Vundle.vim)
 
 ```viml
-Plugin 'zivyangll/git-blame.vim'
+Plugin 'elquimista/vim-git-blame'
 ```
 
 Default bindings
 -----------------
 
-**The default leader has been changed to `<Leader>s` to avoid
+**The default leader has been changed to `<leader>bl` to avoid
 conflicts with other plugins you may have installed.** This can easily be
 changed by rebinding the leader in your vimrc:
 
 ```vim
-nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
+nnoremap <leader>bl :call gitblame#echo()<CR>
 ```
 
 Quick start guide
 -----------------
 
-just use `<leader>s`
+just use `<leader>bl`
 
 Self-Promotion
 --------------
 
-Like git-blame.vim? Follow the repository on
-[GitHub](https://github.com/zivyangll/git-blame.vim) and vote for it on [vim.org](https://www.vim.org/scripts/script.php?script_id=5704). And if
-you're feeling especially charitable, follow [GitHub](https://github.com/zivyangll).
-
-Thanks
---------------
-
-[git-messenger.vim](https://github.com/rhysd/git-messenger.vim)
+Like vim-git-blame? Follow [me](https://github.com/elquimista) and the [repository](https://github.com/elquimista/vim-git-blame).
 
 License
 -------
 
-See [MIT License](https://github.com/zivyangll/git-blame.vim/blob/master/LICENSE).
+See [MIT License](https://github.com/elquimista/vim-git-blame/blob/master/LICENSE).
 
