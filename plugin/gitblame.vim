@@ -5,4 +5,4 @@ let g:loaded_gitblame = 1
 
 command! -nargs=0 GitBlame call gitblame#echo()
 
-nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
+nnoremap <leader>bl :call gitblame#echo()<CR>
